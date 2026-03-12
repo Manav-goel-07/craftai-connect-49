@@ -10,6 +10,8 @@ import CreateProduct from "./pages/CreateProduct";
 import ProductDetail from "./pages/ProductDetail";
 import SocialGenerator from "./pages/SocialGenerator";
 import StoryGenerator from "./pages/StoryGenerator";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/social-generator" element={<SocialGenerator />} />
           <Route path="/story-generator" element={<StoryGenerator />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
