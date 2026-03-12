@@ -10,6 +10,8 @@ import CreateProduct from "./pages/CreateProduct";
 import ProductDetail from "./pages/ProductDetail";
 import SocialGenerator from "./pages/SocialGenerator";
 import StoryGenerator from "./pages/StoryGenerator";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
