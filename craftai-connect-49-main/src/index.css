@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 36 33% 95%;
+    --foreground: 14 18% 19%;
+    --surface: 0 0% 100%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 14 18% 19%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 14 18% 19%;
+
+    --primary: 8 52% 53%;
+    --primary-foreground: 36 33% 95%;
+
+    --secondary: 222 38% 19%;
+    --secondary-foreground: 36 33% 95%;
+
+    --muted: 33 18% 90%;
+    --muted-foreground: 14 10% 40%;
+
+    --accent: 33 18% 90%;
+    --accent-foreground: 14 18% 19%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 33 18% 88%;
+    --input: 33 18% 88%;
+    --ring: 8 52% 53%;
+
+    --radius: 1.5rem;
+
+    --sidebar-background: 36 33% 95%;
+    --sidebar-foreground: 14 18% 19%;
+    --sidebar-primary: 8 52% 53%;
+    --sidebar-primary-foreground: 36 33% 95%;
+    --sidebar-accent: 33 18% 90%;
+    --sidebar-accent-foreground: 14 18% 19%;
+    --sidebar-border: 33 18% 88%;
+    --sidebar-ring: 8 52% 53%;
+
+    /* Custom tokens */
+    --shadow-card: 0 0 0 1px rgba(58, 46, 43, 0.04), 0 2px 8px -2px rgba(58, 46, 43, 0.06), 0 8px 24px -4px rgba(58, 46, 43, 0.04);
+    --shadow-card-hover: 0 0 0 1px rgba(58, 46, 43, 0.06), 0 4px 12px -2px rgba(58, 46, 43, 0.1), 0 12px 32px -4px rgba(58, 46, 43, 0.08);
+    --shadow-float: 0 8px 32px -4px rgba(58, 46, 43, 0.12), 0 16px 48px -8px rgba(58, 46, 43, 0.08);
+    --ai-zone-bg: 222 38% 19%;
+  }
+
+  .dark {
+    --background: 222 38% 10%;
+    --foreground: 36 33% 95%;
+    --surface: 222 30% 14%;
+    --card: 222 30% 14%;
+    --card-foreground: 36 33% 95%;
+    --popover: 222 30% 14%;
+    --popover-foreground: 36 33% 95%;
+    --primary: 8 52% 53%;
+    --primary-foreground: 36 33% 95%;
+    --secondary: 222 20% 25%;
+    --secondary-foreground: 36 33% 95%;
+    --muted: 222 20% 20%;
+    --muted-foreground: 36 15% 60%;
+    --accent: 222 20% 20%;
+    --accent-foreground: 36 33% 95%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 222 20% 20%;
+    --input: 222 20% 20%;
+    --ring: 8 52% 53%;
+    --sidebar-background: 222 38% 10%;
+    --sidebar-foreground: 36 33% 95%;
+    --sidebar-primary: 8 52% 53%;
+    --sidebar-primary-foreground: 36 33% 95%;
+    --sidebar-accent: 222 20% 20%;
+    --sidebar-accent-foreground: 36 33% 95%;
+    --sidebar-border: 222 20% 20%;
+    --sidebar-ring: 8 52% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+  .card-shadow-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+  .float-shadow {
+    box-shadow: var(--shadow-float);
+  }
+  .ai-zone {
+    @apply bg-secondary/5 rounded-2xl p-4;
+  }
+  .artisan-image {
+    @apply aspect-square object-cover outline outline-1 outline-black/10 -outline-offset-1 rounded-2xl;
+  }
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  .fluid-hero {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+}
