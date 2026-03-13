@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Marketplace from "./pages/Marketplace";
 import Dashboard from "./pages/Dashboard";
 import CreateProduct from "./pages/CreateProduct";
+import AIListingGenerator from "./pages/AIListingGenerator";
 import ProductDetail from "./pages/ProductDetail";
 import SocialGenerator from "./pages/SocialGenerator";
 import StoryGenerator from "./pages/StoryGenerator";
