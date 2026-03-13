@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Marketplace from "./pages/Marketplace";
 import Dashboard from "./pages/Dashboard";
 import CreateProduct from "./pages/CreateProduct";
+import AIListingGenerator from "./pages/AIListingGenerator";
 import ProductDetail from "./pages/ProductDetail";
 import SocialGenerator from "./pages/SocialGenerator";
 import StoryGenerator from "./pages/StoryGenerator";
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/create-product" element={<CreateProduct />} />
+          <Route path="/ai-listing" element={<AIListingGenerator />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/social-generator" element={<SocialGenerator />} />
           <Route path="/story-generator" element={<StoryGenerator />} />
